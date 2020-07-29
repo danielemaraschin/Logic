@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")"; // (Almeida)
+    }
+
+    function b(texto) {// Flavio (Almeida)
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome)); //Flávio (Almeida)
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+/*
+a: "(" texto")"
+b: @texto@ 
+c:@FLAVIO@ "("ALMEIDA")"   
+notar que a var A esta dentro da var b no return da function c
+*/
+
+
+
+
+
+
+
+</script> 
