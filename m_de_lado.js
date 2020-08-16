@@ -1,19 +1,19 @@
 var retorno = "";
-var diminuicaoDeColunas = 15;
-var chegouNaMetadeDasLinhas = diminuicaoDeColunas -1;
-var quantidadeDeLinhas = diminuicaoDeColunas * 2;
+var maximoDeColunas = 5;
+var chegouNaMetadeDasLinhas = maximoDeColunas -1;
+var quantidadeDeLinhas = maximoDeColunas * 2;
 
 for (var linha = 1; linha < quantidadeDeLinhas; linha++) {
-    for (var coluna = 1; coluna <= diminuicaoDeColunas; coluna++) {
+    for (var coluna = 1; coluna <= maximoDeColunas; coluna++) {
         retorno = retorno + "*";
     }
     retorno = retorno + "\n";
 
 
     if (linha > chegouNaMetadeDasLinhas) {
-        diminuicaoDeColunas++;
+        maximoDeColunas++;
     } else {
-        diminuicaoDeColunas--;
+        maximoDeColunas--;
     }
 
 }
